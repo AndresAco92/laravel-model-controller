@@ -2,6 +2,19 @@
 
 @section('content')
 
-<h1>ciao come stai ale</h1>
+
+<ul>
+  @foreach ($movies as $movie)
+  <li>Nome Film:
+    {{ $movie['title'] }}
+    <p>
+      Podotto nel'anno:
+      {{ $movie['date'] }}
+    </p>
+  </li>
+    
+  @endforeach
+
+</ul>
 
 @endsection
